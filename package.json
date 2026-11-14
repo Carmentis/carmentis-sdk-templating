@@ -1,0 +1,57 @@
+{
+  "name": "@cmts-dev/carmentis-sdk-templating",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "./dist/carmentis-sdk-templating.cjs",
+  "module": "./dist/carmentis-sdk-templating.js",
+  "types": "./dist/carmentis-sdk-templating.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/carmentis-sdk-templating.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/carmentis-sdk-templating.js",
+      "require": "./dist/carmentis-sdk-templating.cjs",
+      "types": "./dist/carmentis-sdk-templating.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "barrelsby --config barrelsby.json && vite build",
+    "test": "vitest --globals"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
+    "@types/node": "^25.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "@vitest/coverage-v8": "4.1.3",
+    "barrelsby": "^2.8.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.4",
+    "vite": "^8.0.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-node-polyfills": "^0.26.0",
+    "vitest": "^4.1.3"
+  },
+  "dependencies": {
+    "liquidjs": "^10.30.1",
+    "markdown-it": "^15.0.3"
+  }
+}

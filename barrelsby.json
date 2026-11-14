@@ -1,0 +1,10 @@
+{
+  "directory": "src",
+  "name": "carmentis-sdk-templating",
+  "delete": true,
+  "exclude": [
+    "\\.d\\.ts$",
+    "\\.js$",
+    "\\.spec\\.ts$"
+  ]
+}
