@@ -1,5 +1,6 @@
 {
   "name": "@cmts-dev/carmentis-sdk-templating",
+  "repository": "github:Carmentis/carmentis-sdk-templating",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "main": "./dist/carmentis-sdk-templating.cjs",
