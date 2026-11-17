@@ -5,6 +5,7 @@
 export * from "./templates/InjectionCodec";
 export * from "./templates/LiquidProcessor";
 export * from "./templates/MarkdownProcessor";
+export * from "./templates/RepresentationProcessor";
 export * from "./templates/TemplateProcessor";
 export * from "./utils/DataUrl";
 export * from "./utils/ImageUrl";
