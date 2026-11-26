@@ -1,5 +1,6 @@
 import { InjectionCodec } from "./InjectionCodec";
 import { LiquidProcessor } from "./LiquidProcessor";
+import { RepresentationSelectionEnum, RepresentationSelection } from "../types/types"
 import {
     ResolverPath,
     Path,
@@ -7,17 +8,6 @@ import {
     RepresentationTemplateEngine,
     RepresentationFormat,
 } from '@cmts-dev/carmentis-sdk-core';
-
-export enum RepresentationSelectionEnum {
-    FIRST = 'first',
-    ALL = 'all',
-    SELECTED = 'selected',
-}
-
-export interface RepresentationSelection {
-    select: RepresentationSelectionEnum;
-    paths?: Path[];
-}
 
 export class RepresentationProcessor {
     static async toMarkdown(rootObject: Record<any, any>, representations: Map<string, Representation>, selection: RepresentationSelection) {
